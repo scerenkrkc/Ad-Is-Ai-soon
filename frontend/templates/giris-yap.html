@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Giriş Yap · AD&İS AI{% endblock %}
+{% block content %}
+  <h1>Giriş yap</h1>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form method="post">
+    <label>E-posta <input type="email" name="email" required /></label>
+    <label>Şifre <input type="password" name="password" required /></label>
+    <button type="submit">Giriş Yap</button>
+  </form>
+  <p>Hesabın yok mu? <a href="{{ url_for('kayit') }}">Kayıt ol</a></p>
+{% endblock %}

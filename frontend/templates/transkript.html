@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Transkript Yükle · AD&İS AI{% endblock %}
+{% block content %}
+  <h1>Transkript yükle</h1>
+  {% if user %}<p>{{ user.full_name }} olarak devam ediyorsunuz.</p>{% endif %}
+  {% if message %}<p>{{ message }}</p>{% endif %}
+  <form method="post" enctype="multipart/form-data">
+    <label>PDF veya görüntü <input type="file" name="transcript" accept="application/pdf,image/*" required /></label>
+    <button type="submit">Yükle</button>
+  </form>
+  <p><a href="{{ url_for('giris') }}">Giriş ekranına dön</a></p>
+{% endblock %}

@@ -27,8 +27,8 @@ export default function PanelPage() {
         Hoş geldin, {user.fullName}
       </h1>
       <p className="mt-3 text-base leading-7 text-slate-600">
-        Oturum bu tarayıcıda saklanır. Transkript yükleme ekranı örnek ön
-        değerlendirme raporu üretir.
+        Oturum bu tarayıcıda saklanır. Transkript yükleme ekranı belgedeki
+        dersleri okuyup hedef katalogla eşleştirir.
       </p>
       <Link href="/transkript" className={`${primaryButtonClass} mt-8`}>
         <FileUp className="h-4 w-4" aria-hidden="true" />

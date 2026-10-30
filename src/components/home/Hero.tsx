@@ -67,8 +67,8 @@ export function Hero() {
             ))}
           </ul>
           <p className="mt-4 text-xs leading-5 text-slate-500">
-            Benzerlik skorları örnek veridir. Model bağlantısı sonraki aşamada
-            gerçek transkript üzerinden çalışacaktır.
+            Bu kart rapor düzeninin örneğidir. Eşleştirme, yüklenen transkript
+            üzerinden transkript sayfasında yapılır.
           </p>
         </div>
       </div>

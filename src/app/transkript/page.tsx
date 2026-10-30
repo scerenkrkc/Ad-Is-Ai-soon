@@ -13,8 +13,8 @@ export default function TranscriptPage() {
         Belgeni yükle, ön değerlendirmeyi gör
       </h1>
       <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
-        PDF veya kamera taraması ile transkript ekleyin. Eşleştirme sonuçları
-        şimdilik örnek rapordur.
+        PDF veya kamera taraması yükleyin. Metin belgeden okunur, dersler hedef
+        katalogla karşılaştırılır ve sonuç tabloya yazılır.
       </p>
       <div className="mt-8">
         <UploadPanel />
