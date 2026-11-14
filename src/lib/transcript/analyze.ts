@@ -1,5 +1,5 @@
 import OpenAI, { APIError } from "openai";
-import { formatCurriculum } from "@/lib/transcript/curriculum";
+import { prepareComparison } from "@/lib/equivalence/prepare";
 import { TranscriptError } from "@/lib/transcript/errors";
 import { matchStatuses, type CourseMatch, type MatchStatus } from "@/lib/transcript/types";
 
@@ -42,6 +42,7 @@ function asStatus(value: string): MatchStatus {
 
 export async function analyzeTranscript(text: string): Promise<CourseMatch[]> {
   const client = requireClient();
+  const comparison = prepareComparison(text);
 
   try {
     const completion = await client.chat.completions.create({
@@ -53,6 +54,7 @@ export async function analyzeTranscript(text: string): Promise<CourseMatch[]> {
           content: [
             "Üniversite ders intibakı için ön değerlendirme yaparsın.",
             "Transkript metnindeki her dersi hedef katalogdaki en yakın dersle eşleştir.",
+            "Karar verirken ders adı, kredi, AKTS ve içerik açıklamasını birlikte kullan.",
             "Öneri alanına yalnızca katalogdaki kod ve ad yaz. Katalogda karşılık yoksa öneri alanına — yaz ve durumu Eşleşme yok yap.",
             "Skor 0 ile 100 arasında bir tam sayıdır.",
             "85 ve üzeri Yüksek benzerlik, 70-84 Kısmi eşleşme, 50-69 Elle kontrol, 50 altı Eşleşme yok.",
@@ -61,7 +63,7 @@ export async function analyzeTranscript(text: string): Promise<CourseMatch[]> {
         },
         {
           role: "user",
-          content: `Hedef katalog:\n${formatCurriculum()}\n\nTranskript metni başlangıcı\n${text}\nTranskript metni bitişi`,
+          content: `Hedef katalog:\n${comparison.catalogPrompt}\n\nTranskript metni başlangıcı\n${comparison.transcriptText}\nTranskript metni bitişi`,
         },
       ],
       response_format: {
@@ -89,13 +91,39 @@ export async function analyzeTranscript(text: string): Promise<CourseMatch[]> {
       score: Math.max(0, Math.min(100, Math.round(course.score))),
     })).filter((course) => course.course.length > 0);
   } catch (error) {
-    if (error instanceof TranscriptError) throw error;
-    if (error instanceof APIError) {
-      if (error.status === 401) {
-        throw new TranscriptError("OpenAI anahtarı kabul edilmedi. OPENAI_API_KEY değerini kontrol edin.", 401);
-      }
-      throw new TranscriptError("Analiz servisi şu anda yanıt vermiyor.", 502);
+    console.error("OPENAI ANALİZ HATASI:", error);
+  
+    if (error instanceof TranscriptError) {
+      throw error;
     }
-    throw new TranscriptError("Analiz sonucu okunamadı.", 502);
+  
+    if (error instanceof APIError) {
+      console.error("API STATUS:", error.status);
+      console.error("API MESSAGE:", error.message);
+  
+      if (error.status === 401) {
+        throw new TranscriptError(
+          "OpenAI anahtarı kabul edilmedi.",
+          401
+        );
+      }
+  
+      if (error.status === 429) {
+        throw new TranscriptError(
+          "OpenAI kullanım limiti veya kota hatası.",
+          429
+        );
+      }
+  
+      throw new TranscriptError(
+        `OpenAI API hatası: ${error.status}`,
+        502
+      );
+    }
+  
+    throw new TranscriptError(
+      "Analiz sonucu okunamadı.",
+      502
+    );
   }
 }

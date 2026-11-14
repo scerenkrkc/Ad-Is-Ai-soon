@@ -18,10 +18,11 @@ export async function POST(request: Request) {
       fileName: file.name,
       courses,
     });
-  } catch (error) {
+  } catch (error: any) {
+    console.error("TRANSKRİPT ANALİZ HATASI:", error);
     if (error instanceof TranscriptError) {
       return NextResponse.json({ error: error.message }, { status: error.status });
     }
-    return NextResponse.json({ error: "Transkript işlenemedi." }, { status: 500 });
+    return NextResponse.json({ error: error.message || "Transkript işlenemedi." }, { status: 500 });
   }
-}
+}                         

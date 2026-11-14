@@ -1,0 +1,177 @@
+[
+  {
+    "code": "BLM101",
+    "name": "Programlamaya Giriş",
+    "credit": 4,
+    "akts": 6,
+    "content": "Algoritma, akış diyagramı, değişken, veri tipi, koşul, döngü, fonksiyon ve dizi temelleri. Öğrenci bir problemi adımlara böler, sözde kod yazar ve temel bir programlama dilinde küçük programlar geliştirir."
+  },
+  {
+    "code": "BLM102",
+    "name": "Nesne Yönelimli Programlama",
+    "credit": 4,
+    "akts": 6,
+    "content": "Sınıf, nesne, kapsülleme, kalıtım, çok biçimlilik, soyut sınıf ve arayüz. Öğrenci nesne modeliyle modüler program tasarlar, yeniden kullanılabilir sınıflar yazar ve hata yönetimini uygular."
+  },
+  {
+    "code": "BLM201",
+    "name": "Veri Yapıları",
+    "credit": 4,
+    "akts": 6,
+    "content": "Dizi, bağlı liste, yığın, kuyruk, ağaç, ikili arama ağacı, yığın ağacı, hash tablosu ve çizge gösterimleri. Öğrenci veri yapısı seçer, temel ekleme-silme-arama işlemlerini uygular ve bellek kullanımını yorumlar."
+  },
+  {
+    "code": "BLM202",
+    "name": "Algoritma Analizi",
+    "credit": 3,
+    "akts": 5,
+    "content": "Zaman ve bellek karmaşıklığı, büyük O gösterimi, sıralama, arama, böl ve yönet, açgözlü algoritmalar ve dinamik programlama. Öğrenci bir algoritmanın verimliliğini karşılaştırır ve probleme uygun yaklaşımı seçer."
+  },
+  {
+    "code": "BLM211",
+    "name": "Ayrık Matematik",
+    "credit": 3,
+    "akts": 5,
+    "content": "Kümeler, bağıntılar, fonksiyonlar, sayma, tümevarım, önermeler mantığı, yüklemler mantığı, çizge ve ağaçların matematiksel temelleri. Öğrenci ayrık yapıları biçimsel olarak ifade eder ve kanıt kurar."
+  },
+  {
+    "code": "BLM221",
+    "name": "Bilgisayar Organizasyonu",
+    "credit": 3,
+    "akts": 5,
+    "content": "Sayı sistemleri, mantık kapıları, işlemci, bellek hiyerarşisi, komut kümesi, veri yolu ve giriş-çıkış. Öğrenci bir programın donanımda nasıl yürütüldüğünü ve temel bilgisayar bileşenlerinin etkileşimini açıklar."
+  },
+  {
+    "code": "BLM301",
+    "name": "Veritabanı Yönetim Sistemleri",
+    "credit": 3,
+    "akts": 5,
+    "content": "İlişkisel model, varlık-ilişki diyagramı, normalizasyon, SQL ile sorgulama, kısıtlar, indeks ve hareket yönetimi. Öğrenci bir uygulama için şema tasarlar ve veriyi tutarlı biçimde sorgular."
+  },
+  {
+    "code": "BLM311",
+    "name": "İşletim Sistemleri",
+    "credit": 3,
+    "akts": 5,
+    "content": "Süreç, iş parçacığı, CPU zamanlama, bellek yönetimi, sanal bellek, dosya sistemi, kilitlenme ve eşzamanlılık. Öğrenci işletim sisteminin kaynakları nasıl yönettiğini ve süreçler arası etkileşimi açıklar."
+  },
+  {
+    "code": "BLM321",
+    "name": "Bilgisayar Ağları",
+    "credit": 3,
+    "akts": 5,
+    "content": "OSI ve TCP/IP katmanları, IP adresleme, yönlendirme, UDP, TCP, HTTP, DNS ve temel ağ güvenliği. Öğrenci paketlerin uçtan uca nasıl iletildiğini ve yaygın uygulama protokollerinin rolünü açıklar."
+  },
+  {
+    "code": "BLM331",
+    "name": "Yazılım Mühendisliği",
+    "credit": 3,
+    "akts": 5,
+    "content": "Gereksinim analizi, kullanım senaryosu, tasarım, sürüm planı, sınama, bakım ve çevik süreçler. Öğrenci bir yazılım projesini yaşam döngüsü boyunca planlar, belgeler ve ekip içinde teslim eder."
+  },
+  {
+    "code": "BLM341",
+    "name": "Sayısal Tasarım",
+    "credit": 3,
+    "akts": 5,
+    "content": "Boole cebiri, kombinezonsal devreler, toplayıcı, kod çözücü, tutucu, sayıcı ve sonlu durum makineleri. Öğrenci sayısal devre tasarlar ve ardışıl sistemlerin durum diyagramını kurar."
+  },
+  {
+    "code": "BLM351",
+    "name": "Programlama Dilleri",
+    "credit": 3,
+    "akts": 5,
+    "content": "Sözdizimi, anlambilim, tip sistemleri, kapsam, yordamsal, nesne yönelimli ve fonksiyonel paradigmalar. Öğrenci dil yapılarını karşılaştırır ve bir dilin çalışma modelini yorumlar."
+  },
+  {
+    "code": "BLM401",
+    "name": "Yapay Zeka",
+    "credit": 3,
+    "akts": 5,
+    "content": "Arama algoritmaları, bilgi gösterimi, makine öğrenmesine giriş, sınıflandırma ve temel sinir ağı kavramları. Öğrenci bir karar problemini arama veya öğrenme yaklaşımıyla modeller."
+  },
+  {
+    "code": "BLM411",
+    "name": "Web Programlama",
+    "credit": 3,
+    "akts": 5,
+    "content": "HTTP, HTML, CSS, istemci tarafı betik, sunucu tarafı uygulama, REST arayüzü ve oturum yönetimi. Öğrenci tarayıcı ile sunucu arasında veri alışverişi yapan çok katmanlı bir web uygulaması geliştirir."
+  },
+  {
+    "code": "MAT101",
+    "name": "Analiz I",
+    "credit": 4,
+    "akts": 6,
+    "content": "Fonksiyonlar, limit, süreklilik, türev, türev uygulamaları ve integralin temelleri. Öğrenci değişim hızını ve alan hesabını tek değişkenli fonksiyonlarda uygular."
+  },
+  {
+    "code": "MAT102",
+    "name": "Analiz II",
+    "credit": 4,
+    "akts": 6,
+    "content": "İntegral teknikleri, diziler, seriler, çok değişkenli fonksiyonlar, kısmi türev ve katlı integral. Öğrenci tek ve çok değişkenli analiz araçlarını mühendislik problemlerine uygular."
+  },
+  {
+    "code": "MAT201",
+    "name": "Lineer Cebir",
+    "credit": 3,
+    "akts": 5,
+    "content": "Vektör uzayları, matris işlemleri, determinant, lineer denklem sistemleri, özdeğer ve özvektör. Öğrenci lineer dönüşümleri matrislerle temsil eder ve sistemleri çözer."
+  },
+  {
+    "code": "MAT202",
+    "name": "Diferansiyel Denklemler",
+    "credit": 3,
+    "akts": 5,
+    "content": "Birinci mertebe denklemler, sabit katsayılı lineer denklemler, sistemler ve temel dönüşüm yöntemleri. Öğrenci zamana bağlı mühendislik modellerini diferansiyel denklemle kurar ve çözer."
+  },
+  {
+    "code": "MAT211",
+    "name": "Olasılık ve İstatistik",
+    "credit": 3,
+    "akts": 5,
+    "content": "Olasılık aksiyomları, rastgele değişken, beklenen değer, varyans, yaygın dağılımlar, örnekleme ve hipotez testi. Öğrenci veriyi özetler ve belirsizlik altında çıkarım yapar."
+  },
+  {
+    "code": "FIZ101",
+    "name": "Fizik I",
+    "credit": 4,
+    "akts": 6,
+    "content": "Kinematik, Newton yasaları, iş, enerji, momentum ve dönme hareketi. Öğrenci mekanik problemlerini vektörel büyüklükler ve korunum yasalarıyla çözer."
+  },
+  {
+    "code": "FIZ102",
+    "name": "Fizik II",
+    "credit": 4,
+    "akts": 6,
+    "content": "Elektrik yükü, elektrik alan, potansiyel, doğru akım devreleri, manyetik alan ve elektromanyetik indüksiyon. Öğrenci temel elektromanyetizma problemlerini kurar ve çözer."
+  },
+  {
+    "code": "ING101",
+    "name": "İngilizce I",
+    "credit": 2,
+    "akts": 3,
+    "content": "Akademik okuma, temel dilbilgisi, paragraf yazma ve sözlü iletişim. Öğrenci kısa akademik metinleri okur ve günlük akademik konularda anlaşılır biçimde yazar."
+  },
+  {
+    "code": "ING102",
+    "name": "İngilizce II",
+    "credit": 2,
+    "akts": 3,
+    "content": "Akademik dinleme, özet çıkarma, rapor yazma ve sunum. Öğrenci teknik bir konuyu İngilizce olarak özetler ve kısa bir sunum yapar."
+  },
+  {
+    "code": "TUR101",
+    "name": "Türk Dili I",
+    "credit": 2,
+    "akts": 2,
+    "content": "Dilin özellikleri, yazım kuralları, noktalama ve yazılı anlatım. Öğrenci kurallı ve açık Türkçe metin üretir."
+  },
+  {
+    "code": "TAR101",
+    "name": "Atatürk İlkeleri ve İnkılap Tarihi I",
+    "credit": 2,
+    "akts": 2,
+    "content": "Osmanlı Devletinin son dönemi, Milli Mücadele ve Türkiye Cumhuriyetinin kuruluş süreci. Öğrenci inkılap tarihinin temel olaylarını ve Atatürk ilkelerini bağlamıyla açıklar."
+  }
+]
