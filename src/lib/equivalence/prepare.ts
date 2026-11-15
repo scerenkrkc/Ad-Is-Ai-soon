@@ -1,5 +1,5 @@
 import { formatCatalogForMatching, getCatalog } from "@/lib/catalog/catalog";
-import type { CatalogCourse } from "@/lib/catalog/types";
+import type { CatalogCourse, CatalogProgram } from "@/lib/catalog/types";
 
 export type ComparisonContext = {
   transcriptText: string;
@@ -7,10 +7,11 @@ export type ComparisonContext = {
   catalogPrompt: string;
 };
 
-export function prepareComparison(transcriptText: string): ComparisonContext {
+export function prepareComparison(transcriptText: string, program?: CatalogProgram): ComparisonContext {
+  const catalog = getCatalog(program);
   return {
     transcriptText: transcriptText.trim(),
-    catalog: getCatalog(),
-    catalogPrompt: formatCatalogForMatching(),
+    catalog,
+    catalogPrompt: formatCatalogForMatching(catalog),
   };
 }

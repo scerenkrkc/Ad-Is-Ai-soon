@@ -62,7 +62,7 @@ export function UploadPanel() {
         <h2 className="mt-4 text-lg font-semibold text-slate-950">Transkript ekleyin</h2>
         <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-slate-600">
           PDF metni belgeden okunur. Fotoğraf ve kamera taraması görüntü modeli ile
-          okunur. Eşleştirme, bilgisayar mühendisliği ders kataloğuna göre yapılır.
+          okunur. Eşleştirme, endüstriyel kalıpçılık ders kataloğuna göre yapılır.
         </p>
         <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
           <button

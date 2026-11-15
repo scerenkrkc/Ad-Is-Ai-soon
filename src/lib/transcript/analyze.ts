@@ -54,7 +54,7 @@ export async function analyzeTranscript(text: string): Promise<CourseMatch[]> {
           content: [
             "Üniversite ders intibakı için ön değerlendirme yaparsın.",
             "Transkript metnindeki her dersi hedef katalogdaki en yakın dersle eşleştir.",
-            "Karar verirken ders adı, kredi, AKTS ve içerik açıklamasını birlikte kullan.",
+            "Karar verirken program, ders adı, kredi, AKTS ve içerik açıklamasını birlikte kullan.",
             "Öneri alanına yalnızca katalogdaki kod ve ad yaz. Katalogda karşılık yoksa öneri alanına — yaz ve durumu Eşleşme yok yap.",
             "Skor 0 ile 100 arasında bir tam sayıdır.",
             "85 ve üzeri Yüksek benzerlik, 70-84 Kısmi eşleşme, 50-69 Elle kontrol, 50 altı Eşleşme yok.",

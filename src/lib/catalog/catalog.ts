@@ -1,5 +1,9 @@
 import coursesData from "@/data/courses.json";
-import type { CatalogCourse } from "@/lib/catalog/types";
+import { catalogPrograms, type CatalogCourse, type CatalogProgram } from "@/lib/catalog/types";
+
+function isCatalogProgram(value: unknown): value is CatalogProgram {
+  return catalogPrograms.some((program) => program === value);
+}
 
 function isCatalogCourse(value: unknown): value is CatalogCourse {
   if (!value || typeof value !== "object") return false;
@@ -12,14 +16,16 @@ function isCatalogCourse(value: unknown): value is CatalogCourse {
     typeof course.credit === "number" &&
     typeof course.akts === "number" &&
     typeof course.content === "string" &&
-    course.content.trim().length > 0
+    course.content.trim().length > 0 &&
+    isCatalogProgram(course.program)
   );
 }
 
 const catalog: readonly CatalogCourse[] = (coursesData as unknown[]).filter(isCatalogCourse);
 
-export function getCatalog(): readonly CatalogCourse[] {
-  return catalog;
+export function getCatalog(program?: CatalogProgram): readonly CatalogCourse[] {
+  if (!program) return catalog;
+  return catalog.filter((course) => course.program === program);
 }
 
 export function findCourseByCode(code: string): CatalogCourse | undefined {
@@ -27,11 +33,11 @@ export function findCourseByCode(code: string): CatalogCourse | undefined {
   return catalog.find((course) => course.code.replace(/\s+/g, "").toUpperCase() === normalized);
 }
 
-export function formatCatalogForMatching(): string {
-  return catalog
+export function formatCatalogForMatching(courses: readonly CatalogCourse[] = catalog): string {
+  return courses
     .map(
       (course) =>
-        `${course.code} | ${course.name} | Kredi: ${course.credit} | AKTS: ${course.akts} | ${course.content}`,
+        `${course.code} | ${course.name} | Program: ${course.program} | Kredi: ${course.credit} | AKTS: ${course.akts} | ${course.content}`,
     )
     .join("\n");
 }

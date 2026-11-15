@@ -1,177 +1,226 @@
 [
   {
-    "code": "BLM101",
-    "name": "Programlamaya Giriş",
-    "credit": 4,
-    "akts": 6,
-    "content": "Algoritma, akış diyagramı, değişken, veri tipi, koşul, döngü, fonksiyon ve dizi temelleri. Öğrenci bir problemi adımlara böler, sözde kod yazar ve temel bir programlama dilinde küçük programlar geliştirir."
-  },
-  {
-    "code": "BLM102",
-    "name": "Nesne Yönelimli Programlama",
-    "credit": 4,
-    "akts": 6,
-    "content": "Sınıf, nesne, kapsülleme, kalıtım, çok biçimlilik, soyut sınıf ve arayüz. Öğrenci nesne modeliyle modüler program tasarlar, yeniden kullanılabilir sınıflar yazar ve hata yönetimini uygular."
-  },
-  {
-    "code": "BLM201",
-    "name": "Veri Yapıları",
-    "credit": 4,
-    "akts": 6,
-    "content": "Dizi, bağlı liste, yığın, kuyruk, ağaç, ikili arama ağacı, yığın ağacı, hash tablosu ve çizge gösterimleri. Öğrenci veri yapısı seçer, temel ekleme-silme-arama işlemlerini uygular ve bellek kullanımını yorumlar."
-  },
-  {
-    "code": "BLM202",
-    "name": "Algoritma Analizi",
-    "credit": 3,
-    "akts": 5,
-    "content": "Zaman ve bellek karmaşıklığı, büyük O gösterimi, sıralama, arama, böl ve yönet, açgözlü algoritmalar ve dinamik programlama. Öğrenci bir algoritmanın verimliliğini karşılaştırır ve probleme uygun yaklaşımı seçer."
-  },
-  {
-    "code": "BLM211",
-    "name": "Ayrık Matematik",
-    "credit": 3,
-    "akts": 5,
-    "content": "Kümeler, bağıntılar, fonksiyonlar, sayma, tümevarım, önermeler mantığı, yüklemler mantığı, çizge ve ağaçların matematiksel temelleri. Öğrenci ayrık yapıları biçimsel olarak ifade eder ve kanıt kurar."
-  },
-  {
-    "code": "BLM221",
-    "name": "Bilgisayar Organizasyonu",
-    "credit": 3,
-    "akts": 5,
-    "content": "Sayı sistemleri, mantık kapıları, işlemci, bellek hiyerarşisi, komut kümesi, veri yolu ve giriş-çıkış. Öğrenci bir programın donanımda nasıl yürütüldüğünü ve temel bilgisayar bileşenlerinin etkileşimini açıklar."
-  },
-  {
-    "code": "BLM301",
-    "name": "Veritabanı Yönetim Sistemleri",
-    "credit": 3,
-    "akts": 5,
-    "content": "İlişkisel model, varlık-ilişki diyagramı, normalizasyon, SQL ile sorgulama, kısıtlar, indeks ve hareket yönetimi. Öğrenci bir uygulama için şema tasarlar ve veriyi tutarlı biçimde sorgular."
-  },
-  {
-    "code": "BLM311",
-    "name": "İşletim Sistemleri",
-    "credit": 3,
-    "akts": 5,
-    "content": "Süreç, iş parçacığı, CPU zamanlama, bellek yönetimi, sanal bellek, dosya sistemi, kilitlenme ve eşzamanlılık. Öğrenci işletim sisteminin kaynakları nasıl yönettiğini ve süreçler arası etkileşimi açıklar."
-  },
-  {
-    "code": "BLM321",
-    "name": "Bilgisayar Ağları",
-    "credit": 3,
-    "akts": 5,
-    "content": "OSI ve TCP/IP katmanları, IP adresleme, yönlendirme, UDP, TCP, HTTP, DNS ve temel ağ güvenliği. Öğrenci paketlerin uçtan uca nasıl iletildiğini ve yaygın uygulama protokollerinin rolünü açıklar."
-  },
-  {
-    "code": "BLM331",
-    "name": "Yazılım Mühendisliği",
-    "credit": 3,
-    "akts": 5,
-    "content": "Gereksinim analizi, kullanım senaryosu, tasarım, sürüm planı, sınama, bakım ve çevik süreçler. Öğrenci bir yazılım projesini yaşam döngüsü boyunca planlar, belgeler ve ekip içinde teslim eder."
-  },
-  {
-    "code": "BLM341",
-    "name": "Sayısal Tasarım",
-    "credit": 3,
-    "akts": 5,
-    "content": "Boole cebiri, kombinezonsal devreler, toplayıcı, kod çözücü, tutucu, sayıcı ve sonlu durum makineleri. Öğrenci sayısal devre tasarlar ve ardışıl sistemlerin durum diyagramını kurar."
-  },
-  {
-    "code": "BLM351",
-    "name": "Programlama Dilleri",
-    "credit": 3,
-    "akts": 5,
-    "content": "Sözdizimi, anlambilim, tip sistemleri, kapsam, yordamsal, nesne yönelimli ve fonksiyonel paradigmalar. Öğrenci dil yapılarını karşılaştırır ve bir dilin çalışma modelini yorumlar."
-  },
-  {
-    "code": "BLM401",
-    "name": "Yapay Zeka",
-    "credit": 3,
-    "akts": 5,
-    "content": "Arama algoritmaları, bilgi gösterimi, makine öğrenmesine giriş, sınıflandırma ve temel sinir ağı kavramları. Öğrenci bir karar problemini arama veya öğrenme yaklaşımıyla modeller."
-  },
-  {
-    "code": "BLM411",
-    "name": "Web Programlama",
-    "credit": 3,
-    "akts": 5,
-    "content": "HTTP, HTML, CSS, istemci tarafı betik, sunucu tarafı uygulama, REST arayüzü ve oturum yönetimi. Öğrenci tarayıcı ile sunucu arasında veri alışverişi yapan çok katmanlı bir web uygulaması geliştirir."
-  },
-  {
-    "code": "MAT101",
-    "name": "Analiz I",
-    "credit": 4,
-    "akts": 6,
-    "content": "Fonksiyonlar, limit, süreklilik, türev, türev uygulamaları ve integralin temelleri. Öğrenci değişim hızını ve alan hesabını tek değişkenli fonksiyonlarda uygular."
-  },
-  {
-    "code": "MAT102",
-    "name": "Analiz II",
-    "credit": 4,
-    "akts": 6,
-    "content": "İntegral teknikleri, diziler, seriler, çok değişkenli fonksiyonlar, kısmi türev ve katlı integral. Öğrenci tek ve çok değişkenli analiz araçlarını mühendislik problemlerine uygular."
-  },
-  {
-    "code": "MAT201",
-    "name": "Lineer Cebir",
-    "credit": 3,
-    "akts": 5,
-    "content": "Vektör uzayları, matris işlemleri, determinant, lineer denklem sistemleri, özdeğer ve özvektör. Öğrenci lineer dönüşümleri matrislerle temsil eder ve sistemleri çözer."
-  },
-  {
-    "code": "MAT202",
-    "name": "Diferansiyel Denklemler",
-    "credit": 3,
-    "akts": 5,
-    "content": "Birinci mertebe denklemler, sabit katsayılı lineer denklemler, sistemler ve temel dönüşüm yöntemleri. Öğrenci zamana bağlı mühendislik modellerini diferansiyel denklemle kurar ve çözer."
-  },
-  {
-    "code": "MAT211",
-    "name": "Olasılık ve İstatistik",
-    "credit": 3,
-    "akts": 5,
-    "content": "Olasılık aksiyomları, rastgele değişken, beklenen değer, varyans, yaygın dağılımlar, örnekleme ve hipotez testi. Öğrenci veriyi özetler ve belirsizlik altında çıkarım yapar."
-  },
-  {
-    "code": "FIZ101",
-    "name": "Fizik I",
-    "credit": 4,
-    "akts": 6,
-    "content": "Kinematik, Newton yasaları, iş, enerji, momentum ve dönme hareketi. Öğrenci mekanik problemlerini vektörel büyüklükler ve korunum yasalarıyla çözer."
-  },
-  {
-    "code": "FIZ102",
-    "name": "Fizik II",
-    "credit": 4,
-    "akts": 6,
-    "content": "Elektrik yükü, elektrik alan, potansiyel, doğru akım devreleri, manyetik alan ve elektromanyetik indüksiyon. Öğrenci temel elektromanyetizma problemlerini kurar ve çözer."
-  },
-  {
-    "code": "ING101",
-    "name": "İngilizce I",
+    "code": "EKT1101",
+    "name": "Fizik",
     "credit": 2,
     "akts": 3,
-    "content": "Akademik okuma, temel dilbilgisi, paragraf yazma ve sözlü iletişim. Öğrenci kısa akademik metinleri okur ve günlük akademik konularda anlaşılır biçimde yazar."
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Kuvvet, hareket, iş, enerji ve temel malzeme davranışı. Öğrenci kalıp ve imalat problemlerindeki fiziksel büyüklükleri birimleriyle açıklar."
   },
   {
-    "code": "ING102",
-    "name": "İngilizce II",
+    "code": "EKT1103",
+    "name": "Mesleki Matematik",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Oran, denklem, trigonometri, alan ve hacim hesabı. Öğrenci kalıp ölçüsü, açı ve kesit hesabını mesleki problemlere uygular."
+  },
+  {
+    "code": "EKT1105",
+    "name": "Teknik Resim",
+    "credit": 4,
+    "akts": 6,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Görünüş, kesit, ölçülendirme ve çizgi türleri. Öğrenci bir kalıp parçasının yeter sayıda görünüşünü çizer ve imalata esas ölçüleri yerleştirir."
+  },
+  {
+    "code": "EKT1107",
+    "name": "İmalat İşlemleri",
+    "credit": 4,
+    "akts": 6,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Talaşlı imalat, tornalama, frezeleme, delme ve yüzey işleme. Öğrenci parçaya uygun tezgah ve işlem sırasını seçer ve temel imalat adımlarını uygular."
+  },
+  {
+    "code": "EKT1109",
+    "name": "Ölçme ve Kontrol",
     "credit": 2,
     "akts": 3,
-    "content": "Akademik dinleme, özet çıkarma, rapor yazma ve sunum. Öğrenci teknik bir konuyu İngilizce olarak özetler ve kısa bir sunum yapar."
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Kumpas, mikrometre, mastar ve tolerans kontrolü. Öğrenci kalıp parçasındaki ölçü sapmasını okur ve parçanın kabul durumunu belirler."
   },
   {
-    "code": "TUR101",
-    "name": "Türk Dili I",
-    "credit": 2,
-    "akts": 2,
-    "content": "Dilin özellikleri, yazım kuralları, noktalama ve yazılı anlatım. Öğrenci kurallı ve açık Türkçe metin üretir."
+    "code": "EKT1111",
+    "name": "Bilgisayar Destekli Çizim 1",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "CAD ortamında eskiz, temel katı model ve görünüş çıkarma. Öğrenci basit bir kalıp parçasının iki boyutlu teknik resmini bilgisayarda üretir."
   },
   {
-    "code": "TAR101",
-    "name": "Atatürk İlkeleri ve İnkılap Tarihi I",
+    "code": "EKT1113",
+    "name": "Meslek Etiği",
+    "credit": 1,
+    "akts": 1,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Mesleki sorumluluk, iş ahlakı ve güvenli çalışma ilkeleri. Öğrenci atölyedeki bir kararda etik sorumluluğu ve iş güvenliği yükümlülüğünü ayırt eder."
+  },
+  {
+    "code": "EKT1201",
+    "name": "Bilgi Teknolojileri",
     "credit": 2,
-    "akts": 2,
-    "content": "Osmanlı Devletinin son dönemi, Milli Mücadele ve Türkiye Cumhuriyetinin kuruluş süreci. Öğrenci inkılap tarihinin temel olaylarını ve Atatürk ilkelerini bağlamıyla açıklar."
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Ofis yazılımları, dosya yönetimi ve temel internet uygulamaları. Öğrenci teknik bir belgeyi düzenler ve sayısal dosyayı doğru biçimde saklar."
+  },
+  {
+    "code": "EKT1203",
+    "name": "Kalite Güvencesi ve Standartlar",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Kalite kontrol, standart doküman ve uygunsuzluk kaydı. Öğrenci bir kalıp parçasını ilgili ölçü ve kalite kriterine göre değerlendirir."
+  },
+  {
+    "code": "EKT1205",
+    "name": "Bilgisayar Destekli Analiz 1",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Model üzerinde temel gerilme ve şekil değiştirme incelemesi. Öğrenci basit bir kalıp elemanında kritik bölgeyi analiz sonucundan okur."
+  },
+  {
+    "code": "EKT1102",
+    "name": "Bilgisayar Destekli Çizim 2",
+    "credit": 3,
+    "akts": 5,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Montaj modelleme, parça listesi ve imalat resmi. Öğrenci bir kalıp montajını CAD ortamında kurar ve parçaların birleşme ilişkisini gösterir."
+  },
+  {
+    "code": "EKT1104",
+    "name": "Saç Metal Kalıpçılık Tekniği",
+    "credit": 6,
+    "akts": 8,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Kesme, bükme, çekme ve sac kalıbı elemanları. Öğrenci sac parça için kalıp tipini seçer ve zımba, dişi ve sıyırıcı yerleşimini açıklar."
+  },
+  {
+    "code": "EKT1106",
+    "name": "Makine Meslek Resmi",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Makine parçalarında tolerans, yüzey işareti, kesit ve montaj resmi. Öğrenci bir makine parçasının imalat resmini meslek kurallarına göre okur ve çizer."
+  },
+  {
+    "code": "EKT1108",
+    "name": "Malzeme Teknolojisi",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Metal, çelik, ısıl işlem ve malzeme özellikleri. Öğrenci kalıp elemanına uygun malzemeyi sertlik, aşınma ve işlenebilirlik açısından seçer."
+  },
+  {
+    "code": "EKT1110",
+    "name": "Mukavemet",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Gerilme, kesme, eğilme ve basit kesit kontrolü. Öğrenci kalıp elemanında oluşan kuvveti kesite bağlar ve yeterli olup olmadığını yorumlar."
+  },
+  {
+    "code": "EKT1112",
+    "name": "Bilgisayar Destekli Üretim 1",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "CAM ile takım yolu, kesme parametresi ve temel NC kodu. Öğrenci basit bir kontur için takım yolunu oluşturur ve işlem sırasını kontrol eder."
+  },
+  {
+    "code": "EKT2101",
+    "name": "Bilgisayar Destekli Üretim 2",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Cep boşaltma, delik çevrimi ve çok işlemli takım yolları. Öğrenci bir kalıp boşluğunun CAM programını hazırlar ve çarpma riskini kontrol eder."
+  },
+  {
+    "code": "EKT2103",
+    "name": "Enjeksiyon Kalıpçılığı",
+    "credit": 6,
+    "akts": 8,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Kalıp gövdesi, yolluk, itici, soğutma ve çıkma açısı. Öğrenci plastik parça için enjeksiyon kalıbının ana elemanlarını yerleştirir ve dolum-soğuma ilişkisini açıklar."
+  },
+  {
+    "code": "EKT2105",
+    "name": "CNC Freze Teknolojisi",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "CNC freze eksenleri, iş parçası bağlama, takım ve program çalıştırma. Öğrenci kalıp parçası için frezeleme sırasını kurar ve tezgah üzerinde güvenli deneme kesimi yapar."
+  },
+  {
+    "code": "EKT2107",
+    "name": "Hidrolik ve Pnömatik",
+    "credit": 3,
+    "akts": 4,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Basınç, valf, silindir ve devre şeması. Öğrenci kalıp hareketi için hidrolik veya pnömatik bir devreyi okur ve temel kumanda sırasını kurar."
+  },
+  {
+    "code": "EKT2113",
+    "name": "İş Sağlığı ve Güvenliği",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Atölye tehlikeleri, kişisel koruyucu donanım ve acil durum. Öğrenci tezgah ve kalıp çalışmasında riski tanır ve güvenli çalışma kuralını uygular."
+  },
+  {
+    "code": "EKT2201",
+    "name": "Dövme Kalıpçılığı",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Açık ve kapalı dövme, kalıp boşluğu ve çapak. Öğrenci dövme parçasının kalıp ayrım yüzeyini ve malzeme akışını açıklar."
+  },
+  {
+    "code": "EKT2203",
+    "name": "Kalıp Malzemeleri ve Isıl İşlem",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Takım çeliği, sertleştirme, meneviş ve yüzey aşınması. Öğrenci kalıp elemanına ısıl işlem seçer ve beklenen sertlik sonucunu yorumlar."
+  },
+  {
+    "code": "EKT2205",
+    "name": "Kaynak Teknolojisi",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Ark kaynağı, gazaltı kaynağı ve birleştirme hataları. Öğrenci kalıp veya sac parçada uygun kaynak yöntemini seçer ve dikiş kusurunu ayırt eder."
+  },
+  {
+    "code": "EKT2207",
+    "name": "Kesici Takım Teknolojisi",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Takım malzemesi, kesici ağız, kaplama ve kesme parametresi. Öğrenci işlenen malzemeye uygun kesici takımı ve devir-ilerleme değerini seçer."
+  },
+  {
+    "code": "EKT2209",
+    "name": "İleri İmalat Teknolojisi",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Hassas işleme, yüksek hızlı kesme ve yeni imalat yaklaşımları. Öğrenci klasik talaşlı imalat ile ileri yöntemi kalıp parçası üzerinden karşılaştırır."
+  },
+  {
+    "code": "EKT2211",
+    "name": "Özel Üretim Yöntemleri",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Tel erezyon, dalma erezyon ve geleneksel olmayan işleme. Öğrenci sert kalıp boşluğunda uygun özel üretim yöntemini seçer."
+  },
+  {
+    "code": "EKT2213",
+    "name": "Plastik Şişirme ve Ekstrüzyon Kalıplama",
+    "credit": 2,
+    "akts": 3,
+    "program": "Endüstriyel Kalıpçılık",
+    "content": "Şişirme, ekstrüzyon, parison ve kalıp soğutması. Öğrenci içi boş plastik parça için şişirme kalıbının çalışma adımlarını açıklar."
   }
 ]
